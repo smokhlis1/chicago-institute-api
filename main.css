@@ -1,0 +1,101 @@
+.navbar {
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 1rem;
+  }
+  
+.navbar-brand a {
+    color: green;
+    font-size: 20px;
+    text-decoration: none;
+}
+  
+
+#gallery {
+    background-color: tan;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.artwork {
+    width: 200px;
+    height: 300px;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    border: 5px solid #000;
+    background-color: #f8f8f8;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-left: -10px;
+}
+
+.artwork img {
+    max-width: 100%;
+    max-height: 100%;
+    cursor: pointer;
+    border: none;
+    background-color: #000000;
+}
+
+.artwork p {
+    margin: 10px 0 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: pre-wrap;
+    width: 100%;
+}
+
+.artwork-popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    z-index: 1000;
+    max-width: 80%;
+    max-height: 80%;
+    overflow-y: auto;
+}
+
+.artwork-popup img {
+    max-width: 100%;
+    height: auto;
+}
+
+.close-popup {
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+}
+
+.description {
+    white-space: pre-wrap;
+}
